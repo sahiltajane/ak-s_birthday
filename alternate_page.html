@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Yet!</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="alternate-container">
+        <h1>It's almost time for the surprise!</h1>
+        <p>Check back when the countdown reaches zero!</p>
+        <!-- Button to manually go to the birthday page -->
+        <button id="goto-birthday">Go to Birthday Page</button>
+    </div>
+
+    <style>
+        #alternate-container {
+            text-align: center;
+            margin-top: 20%;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script>
+        // Button click event to go to the birthday page
+        document.getElementById("goto-birthday").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
